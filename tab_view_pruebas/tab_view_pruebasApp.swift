@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct tab_view_pruebasApp: App {
+    @State var control_mensajes = MensajesControl()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ControlHogarVista()
+                .environment(control_mensajes)
         }
     }
 }
