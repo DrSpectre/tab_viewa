@@ -10,9 +10,13 @@ struct MensajesPantalla: View {
     let mensajes: [Mensaje]
     
     var body: some View {
-        ForEach(mensajes){ mensaje in
-            MensajeVista(mensaje: mensaje)
-            
+        ScrollView(.vertical){
+            LazyVStack{
+                ForEach(mensajes){ mensaje in
+                    MensajeVista(mensaje: mensaje)
+                    
+                }
+            }
         }
         
     }

@@ -13,6 +13,8 @@ let ConversacionesFalsas = [
 ]
  */
 
+import Foundation
+
 let ConversacionesFalsas = [
 
     // 1) Rogue Amendiares ↔ Krieg (Reapers) — Extracción en Watson
@@ -20,6 +22,46 @@ let ConversacionesFalsas = [
         remitente: "Rogue Amendiares",
         receptor: "Krieg",
         mensajes: [
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Krieg, soy Rogue. Tengo un contrato que huele a Militech por todas partes. Necesito a los Reapers."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Habla claro. ¿Cuántos eddies y cuántos cuerpos van a volver en bolsas?"),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "5000 por cabeza. Y espero que ninguno vuelva en bolsas. Es una extracción, no una carnicería."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Los Reapers no hacen guardería, Rogue. Pero por 5k... dinos dónde y cuándo."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Enviaré los detalles encriptados. Y Krieg... si falláis, no me conocéis."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Krieg, soy Rogue. Tengo un contrato que huele a Militech por todas partes. Necesito a los Reapers."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Habla claro. ¿Cuántos eddies y cuántos cuerpos van a volver en bolsas?"),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "5000 por cabeza. Y espero que ninguno vuelva en bolsas. Es una extracción, no una carnicería."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Los Reapers no hacen guardería, Rogue. Pero por 5k... dinos dónde y cuándo."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Enviaré los detalles encriptados. Y Krieg... si falláis, no me conocéis."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Krieg, soy Rogue. Tengo un contrato que huele a Militech por todas partes. Necesito a los Reapers."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Habla claro. ¿Cuántos eddies y cuántos cuerpos van a volver en bolsas?"),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "5000 por cabeza. Y espero que ninguno vuelva en bolsas. Es una extracción, no una carnicería."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Los Reapers no hacen guardería, Rogue. Pero por 5k... dinos dónde y cuándo."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Enviaré los detalles encriptados. Y Krieg... si falláis, no me conocéis."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Krieg, soy Rogue. Tengo un contrato que huele a Militech por todas partes. Necesito a los Reapers."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Habla claro. ¿Cuántos eddies y cuántos cuerpos van a volver en bolsas?"),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "5000 por cabeza. Y espero que ninguno vuelva en bolsas. Es una extracción, no una carnicería."),
+            Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
+                    cuerpo: "Los Reapers no hacen guardería, Rogue. Pero por 5k... dinos dónde y cuándo."),
+            Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
+                    cuerpo: "Enviaré los detalles encriptados. Y Krieg... si falláis, no me conocéis."),
             Mensaje(remitente: "Rogue Amendiares", receptor: "Krieg",
                     cuerpo: "Krieg, soy Rogue. Tengo un contrato que huele a Militech por todas partes. Necesito a los Reapers."),
             Mensaje(remitente: "Krieg", receptor: "Rogue Amendiares",
@@ -89,5 +131,15 @@ let ConversacionesFalsas = [
             Mensaje(remitente: "Nyx", receptor: "El Capitán",
                     cuerpo: "Nada es fácil en Night City. Pero por 7k, los Reapers te lo ponemos fácil.")
         ]
+    ),
+    Conversacion(
+        remitente: "C",
+        receptor: "N",
+        mensajes: [Mensaje] (
+            repeating:
+                Mensaje(id: UUID(), remitente: "Nyx", receptor: "El Capitán",
+                                                cuerpo: "Nada es fácil en Night City. Pero por 7k, los Reapers te lo ponemos fácil."),
+            count: 99999
+        )
     )
 ]
